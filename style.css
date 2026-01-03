@@ -1,0 +1,37 @@
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+header {
+  background: #222;
+}
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 15px 30px;
+}
+.logo {
+  color: #fff;
+}
+.menu {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+  list-style: none;
+}
+.menu a {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+.menu a:hover {
+  color: #00adb5;
+}
+.hamburger {
+  display: none;
+  background: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
