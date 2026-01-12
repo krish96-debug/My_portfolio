@@ -1,59 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Contact</title>
-  <link rel="stylesheet" href="css/style.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/022d9e42ab.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo"><img src="images/logo.png" alt="Portfolio logo" /></h1>
+        <button class="hamburger" id="hamburger">☰</button>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="videoDemo.html">Video Demo</a></li>
+          <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<header>
-  <nav>
-    <h1>My Portfolio</h1>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="project.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><a href="videoDemo.html">Video</a></li>
-      <li><a href="sitereport.html">Site Report</a></li>
-    </ul>
-  </nav>
-</header>
+    <main class="contact">
+      <section>
+        <h2>Contact Information</h2>
+        <p><i class="fa-solid fa-user"></i>Krishna Chaudhary</p>
+        <p>
+          <i class="fa-solid fa-paper-plane"></i>krishnachaudhary0225@gmail.com
+        </p>
+        <p><i class="fa-solid fa-location-dot"></i>Kathmandu, Nepal</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/krie.shna.5"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/krie.shna/"
+            ><i class="fa-brands fa-square-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/krishna-chaudhary-507a8034a/"
+            ><i class="fa-brands fa-square-linkedin"></i
+          ></a>
+        </div>
+      </section>
 
-<main class="contact">
+      <section>
+        <h2>Send Me a Message</h2>
 
-  <!-- CONTACT DETAILS -->
-  <section>
-    <h2>Contact Information</h2>
-    <p><strong>Name:</strong>Krishna Chaudhary</p>
-    <p><strong>Email:</strong>krishnachaudhary0225@gmail.com</p>
-    <p><strong>Location:</strong> Nepal</p>
-  </section>
+        <form
+          action="mailto:krishnachaudhary0225@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="Your Name" required />
 
-  <!-- CONTACT FORM -->
-  <section>
-    <h2>Send Me a Message</h2>
+          <label>Your Email</label>
+          <input type="email" name="email" placeholder="Your email" required />
 
-    <form action="mailto:krishnachaudhary0225@gmail.com" method="post" enctype="text/plain">
-      <label>Your Name</label>
-      <input type="text" name="name" required>
+          <label>Message</label>
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
 
-      <label>Your Email</label>
-      <input type="email" name="email" required>
-
-      <label>Message</label>
-      <textarea name="message"></textarea>
-
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-</main>
-
-<footer>
-  <p>© 2025 Krishna Chaudhary</p>
-</footer>
-
-</body>
+          <button type="submit" class="btn">Send</button>
+        </form>
+      </section>
+    </main>
+    <footer>© 2025 Krishna Chaudhary</footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.querySelector(".menu");
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
 </html>

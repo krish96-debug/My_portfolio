@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site report</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h1 class="logo"><img src="images/logo.png" alt="Portfolio logo" /></h1>
+        <button class="hamburger" id="hamburger">☰</button>
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="videoDemo.html">Video Demo</a></li>
+          <li><a href="sitereport.html">Site Report</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="report">
+      <h2>Site Report</h2>
+      <section>
+        <h3><strong>Introduction</strong></h3>
+        <p>
+          This website was completed for the purpose of the CSY1063 Web
+          Development module. The goal of this project was to create a
+          responsive portfolio site using HTML, CSS, and GitHub while adhering
+          to current developments on the internet for website standards. I
+          previously knew the fundamentals of HTML and CSS about two years ago,
+          but I had not used them since then. This assignment has given me the
+          chance to update and enhance my basic knowledge. While learning newer
+          concepts such as CSS Grid, responsive design, and proper use of
+          semantic HTML.
+        </p>
+        <p>
+          Working on this project allowed me to go back and refocus on HTML and
+          CSS, which then let me apply my knowledge of how the websites are
+          organized and designed. It further enabled me to point out loopholes
+          in my early gain knowledge and help increase my confidence in writing
+          well-structured code.
+        </p>
+      </section>
+      <section>
+        <h3>Development Process and Challenges</h3>
+        <p>
+          During the development process, I learned how to use semantic HTML
+          elements such as header, nav, main, section, and footer instead of
+          relying only on div tags. One of the biggest challenges I faced was
+          using CSS Grid correctly to create responsive layouts. Initially, my
+          layouts would break on smaller screens, but through testing and
+          debugging using browser developer tools, I learned how to use media
+          queries to redesign layouts for mobile devices.
+        </p>
+      </section>
+      <section>
+        <h3>Design Decisions</h3>
+        <p>
+          My site design is simple and clean, with neutral background colors and
+          good contrast for make it more readable. A sans serif font was chosen
+          for a modern feel, a professional appearance. Design and navigation
+          are from simple portfolio themes websites that also helped affect my
+          design to keep everything minimal and user-friendly.
+        </p>
+      </section>
+      <section>
+        <h3>Reflection and Learning</h3>
+        <p>
+          The contact page includes both my contact details and a mailto form,
+          as server-side scripting is outside the scope of this module. I also
+          included a video demonstration page to explain the website structure
+          and CSS concepts used. Throughout the project, I used GitHub to manage
+          my work and committed changes. Overall, this project improved my
+          confidence in web development and gave me a solid foundation in
+          responsive design, debugging, and version control.
+        </p>
+      </section>
+
+      <section>
+        <div class="validate">
+          <h2>Validation check</h2>
+          <p>
+            Screenshots of HTML and CSS validation reports have been included to
+            show that the code follows web standards. It was checked with the
+            help of <a href="https://validator.w3.org/">validator.</a>
+          </p>
+
+          <figure class="validation-item">
+            <img
+              src="images/indexcheck.png"
+              alt="HTML validation for index page"
+            />
+            <figcaption>HTML validation result for index.html</figcaption>
+          </figure>
+          <figure class="validation-item">
+            <img
+              src="images/projectcheck.png"
+              alt="HTML validation for project page"
+            />
+            <figcaption>HTML validation result for project.html</figcaption>
+          </figure>
+          <figure class="validation-item">
+            <img
+              src="images/contactcheck.png"
+              alt="HTML validation for contact page"
+            />
+            <figcaption>HTML validation result for contact.html</figcaption>
+          </figure>
+          <figure class="validation-item">
+            <img
+              src="images/videodemocheck.png"
+              alt="HTML validation for videoDemo page"
+            />
+            <figcaption>HTML validation result for videoDemo.html</figcaption>
+          </figure>
+          <figure class="validation-item">
+            <img
+              src="images/sitereportcheck.png"
+              alt="HTML validation for site report page"
+            />
+            <figcaption>HTML validation result for sitereport.html</figcaption>
+          </figure>
+          <figure class="validation-item">
+            <img src="images/csscheck.png" alt="CSS check" />
+            <figcaption>CSS validation result for style.css</figcaption>
+          </figure>
+        </div>
+        <p>
+          Video demonstration link:
+          <a href="https://www.youtube.com/watch?v=qEqNtwI8_8U" target="_blank"
+            >Click here to view</a
+          >
+        </p>
+      </section>
+    </main>
+    <footer>© 2025 Krishna Chaudhary</footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.querySelector(".menu");
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
+  </body>
+</html>

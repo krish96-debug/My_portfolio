@@ -8,8 +8,8 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
-        <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <h1 class="logo"><img src="images/logo.png" alt="Portfolio logo" /></h1>
         <button class="hamburger" id="hamburger">☰</button>
         <ul class="menu">
           <li><a href="index.html">Home</a></li>
@@ -20,7 +20,38 @@
         </ul>
       </nav>
     </header>
-    <main class="project"></main>
+    <main class="project">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="Sms">
+          <img src="images/Sms.png" alt="P1" />
+          <h3>Student Management System App</h3>
+          <p>
+            I created this project in the second semester of my undergraduate
+            degree. This program combines everything i learnt- OOP, File
+            Handling and Event-Driven GUI into a single Student Management
+            System.
+          </p>
+        </div>
+        <div class="weather-app">
+          <img src="images/weather-app.jpeg" alt="P2" />
+          <h3>Weather App</h3>
+          <p>
+            I created this Python-based weather app to check the real-time
+            weather details for any location. It fetches live data from a
+            weather API and displays temperature, weather, and wind speed in a
+            user-friendly format.
+          </p>
+        </div>
+      </div>
+    </main>
     <footer>© 2025 Krishna Chaudhary</footer>
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const menu = document.querySelector(".menu");
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("show");
+      });
+    </script>
   </body>
 </html>
